@@ -1,0 +1,169 @@
+.container{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:219px;
+    height:740px;
+    background-color: white;
+    
+}
+.left_elements h2{
+    position: relative;
+    font-family:Roboto;
+    color:darkblue;
+    left:40px;    
+}
+
+#diamond { width: 0; height: 0;border: 10px solid transparent; border-bottom-color: yellow; position: relative; top: -10px; }
+
+#diamond:after { content: ''; position: absolute; left: -10px; top: 10px; width: 0; height: 0; border: 10px solid transparent; border-top-color: yellow; }
+
+.container1{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:350px;
+    height:66px;
+    background-color: white;
+    
+}
+.container1 i{
+    position: relative;
+    top:10px;
+}
+h1{
+    position: absolute;
+    top:0px;
+    left:280px;
+    color: darkblue;
+    font-size: 40px;
+    
+}
+.radio_bar{
+    position:absolute;
+    top:100px;
+    left:280px;
+    width:1130px;
+    height:50px;
+    background-color:darkblue;
+    
+}
+.radio_bar p{
+     position: relative;
+     top:-10px;
+     left:20px;
+     color: white;
+    font-size: 18px;
+}
+input[type='radio']:after {
+        width: 10px;
+        height: 10px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+input[type='radio']:checked:after {
+        width: 10px;
+        height: 10px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: yellow;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+#rcorners
+{
+  border-radius: 25px;
+  border: 2px;
+  padding: 20px; 
+  width: 1100px;
+  height: 30px; 
+}
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px;
+  padding: 20px; 
+  width: 320px;
+  height: 40px;  
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px;
+  padding: 20px; 
+  width: 320px;
+  height: 180px;  
+}
+
+.part1{
+	position: absolute;
+    top:200px;
+    left:280px;
+    width:370px;
+    height:200px;
+    background-color: white;
+}
+.part2{
+	position: absolute;
+    top:200px;
+    left:670px;
+    width:370px;
+    height:200px;
+    background-color: white;
+}
+.part3{
+	position: absolute;
+    top:200px;
+    left:1060px;
+    width:370px;
+    height:200px;
+    background-color: white;
+}
+.part4{
+	position: absolute;
+    top:420px;
+    left:280px;
+    width:370px;
+    height:200px;
+    background-color: white;
+}
+.part5{
+	position: absolute;
+    top:420px;
+    left:670px;
+    width:370px;
+    height:200px;
+    background-color: white;
+}
+.part6{
+	position: absolute;
+    top:420px;
+    left:1060px;
+    width:370px;
+    height:200px;
+    background-color: white;
+}
+.info1{
+    position: relative;
+    top:5px;
+    left:330px;
+}
+.partition1 h3{
+    position: relative;
+    top:10px;
+    left:20px;
+	font-size:20px;
+    
+}
+
+
+

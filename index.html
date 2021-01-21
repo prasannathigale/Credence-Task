@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        
+    </head>
+    <body style="background-color:gainsboro">
+        <div class="container">
+            
+            <div class="logo">
+                <br>
+                &nbsp;&nbsp;<img src="cred_logo.png" width="150px" height="50px">
+            </div>
+            
+            <div class="left_elements">
+                <br><br>
+                <h2>Dashboard</h2></p>
+                <h2>In Process</h2>
+                <h2>History</h2>
+            </div>
+            
+        </div>
+        
+        <h1>Dashboard</h1>
+        
+        <div class="container1" id="rcorners1">
+            <center>
+             
+                <span id="Info_app-1" v-bind:title="message">
+                    <i  class="fa fa-question-circle" style="font-size:30px;color:blue"></i>
+                </span>&nbsp;&nbsp;&nbsp;
+                <script>
+                        var app1 = new Vue({
+                                    el: '#Info_app-1',
+                                    data: {
+                                    message: 'If you need any help..!!'
+                                    }
+                                })
+                </script>
+                
+                <span id="Notify_app-1" v-bind:title="message">
+                    <i class="fa fa-bell" style="font-size:30px;color:blue"></i>
+                </span>&nbsp;&nbsp;&nbsp;
+                <script>
+                        var app1 = new Vue({
+                                    el: '#Notify_app-1',
+                                    data: {
+                                    message: 'Open it for notifications..!!'
+                                    }
+                                })
+                </script>
+                
+                <span id="Profile_app-1" v-bind:title="message">
+                    <i class="fa fa-user-circle-o" style="font-size:30px;color:blue"></i> 
+                </span>
+                <script>
+                        var app1 = new Vue({
+                                    el: '#Profile_app-1',
+                                    data: {
+                                    message: 'Profile \n Name:Prasanna Thigale \n Age:21'
+                                    }
+                                })
+                </script>
+                
+           
+            </center>
+        </div>
+        
+        <div class="radio_bar" id="rcorners">
+            <p>Auto Processing 
+                <i class="fa fa-toggle-on" style="font-size:17px;color:yellow"></i>
+                &nbsp;&nbsp;&nbsp; Manual Processing
+                &nbsp;&nbsp;&nbsp; | 
+                &nbsp;&nbsp;&nbsp; 
+                <input type="radio" style="color:yellow" name="r1">
+                <label>All</label>
+                &nbsp;&nbsp;&nbsp; 
+                <input type="radio" style="color:yellow" name="r1">
+                <label>TAT</label>
+                &nbsp;&nbsp;&nbsp; 
+                <input type="radio" style="color:yellow" name="r1">
+                <label>Count</label>
+                &nbsp;&nbsp;&nbsp; |
+                &nbsp;&nbsp;&nbsp; Time
+                &nbsp;&nbsp;&nbsp; 
+                <input type="radio" style="color:yellow" name="t1">
+                <label>10 Min</label>
+                &nbsp;&nbsp;&nbsp; 
+                <input type="radio" style="color:yellow" name="t1">
+                <label>1 Hour</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                <input type="radio" style="color:yellow" name="t1">
+                <label>1 Day</label>
+                &nbsp;&nbsp;&nbsp; 
+                <input type="radio" style="color:yellow" name="t1">
+                <label>5 Days</label>
+                
+            </p>
+        </div>
+        
+<div class="part1">
+      <div class="card mt-0">
+        <div class="card-body">
+          
+           
+                <p v-for="item in items" v-html="item.message">
+				</p>
+           
+          
+        </div>
+      </div>
+  </div>
+   
+<script>
+  Vue.config.devtools = true
+  var app = new Vue({
+    el:'.card-body',
+    data:{
+		items:[
+		{ message: '<div class="partition1" ><div class="info1"><i class="fa fa-info-circle"></i></div><h3><i class="fa fa-clock-o"></i>TAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <progress value="15" max="100"  >15%</progress></i><br><i class="fa fa-area-chart"></i>Count &nbsp;<progress value="50" max="100">50%</progress></h3><br><h3>  Process Message   </h3></div>' },
+		],
+    }
+  })
+  
+</script>
+
+  <div class="part2">
+      <div class="card mt-3">
+        <div class="card-body1">
+            
+                <p v-for="item in items" v-html="item.message">
+				</p>
+           
+        </div>
+      </div>
+  </div>
+  
+<script>
+  Vue.config.devtools = true
+  var app = new Vue({
+    el:'.card-body1',
+    data:{
+		items:[
+		{ message: '<div class="partition1" ><div class="info1"><i class="fa fa-info-circle"></i></div><h3><i class="fa fa-clock-o"></i>TAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <progress value="15" max="100"  >15%</progress></i><br><i class="fa fa-area-chart"></i>Count &nbsp;<progress value="50" max="100">50%</progress></h3><br><h3>  Recon Messages   </h3></div>' },
+		],
+    }
+  })
+  
+</script>
+
+<div class="part3">
+      <div class="card mt-3">
+        <div class="card-body2">
+            
+                <p v-for="item in items" v-html="item.message">
+				</p>
+           
+        </div>
+      </div>
+  </div>
+  
+<script>
+  Vue.config.devtools = true
+  var app = new Vue({
+    el:'.card-body2',
+    data:{
+		items:[
+		{ message: '<div class="partition1" ><div class="info1"><i class="fa fa-info-circle"></i></div><h3><i class="fa fa-clock-o"></i>TAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <progress value="15" max="100"  >15%</progress></i><br><i class="fa fa-area-chart"></i>Count &nbsp;<progress value="50" max="100">50%</progress></h3><br><h3>  Mark Message (UnIdentified)  </h3></div>' },
+		],
+    }
+  })
+  
+</script>
+
+<div class="part4">
+      <div class="card mt-3">
+        <div class="card-body3">
+            
+                <p v-for="item in items" v-html="item.message">
+				</p>
+           
+        </div>
+      </div>
+  </div>
+  
+<script>
+  Vue.config.devtools = true
+  var app = new Vue({
+    el:'.card-body3',
+    data:{
+		items:[
+		{ message: '<div class="partition1" ><div class="info1"><i class="fa fa-info-circle"></i></div><h3><i class="fa fa-clock-o"></i>TAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <progress value="15" max="100"  >15%</progress></i><br><i class="fa fa-area-chart"></i>Count &nbsp;<progress value="50" max="100">50%</progress></h3><br><h3>  Mark Message (Return Of Fund)   </h3></div>' },
+		],
+    }
+  })
+  
+</script>
+
+<div class="part5">
+      <div class="card mt-3">
+        <div class="card-body4">
+            
+                <p v-for="item in items" v-html="item.message">
+				</p>
+           
+        </div>
+      </div>
+  </div>
+  
+<script>
+  Vue.config.devtools = true
+  var app = new Vue({
+    el:'.card-body4',
+    data:{
+		items:[
+		{ message: '<div class="partition1" ><div class="info1"><i class="fa fa-info-circle"></i></div><h3><i class="fa fa-clock-o"></i>TAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <progress value="15" max="100"  >15%</progress></i><br><i class="fa fa-area-chart"></i>Count &nbsp;<progress value="50" max="100">50%</progress></h3><br><h3>  Filter Messages   </h3></div>' },
+		],
+    }
+  })
+  
+</script>
+
+<div class="part6">
+      <div class="card mt-3">
+        <div class="card-body5">
+            
+                <p v-for="item in items" v-html="item.message">
+				</p>
+           
+        </div>
+      </div>
+  </div>
+  
+<script>
+  Vue.config.devtools = true
+  var app = new Vue({
+    el:'.card-body5',
+    data:{
+		items:[
+		{ message: '<div class="partition1" ><div class="info1"><i class="fa fa-info-circle"></i></div><h3><i class="fa fa-clock-o"></i>TAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <progress value="15" max="100"  >15%</progress></i><br><i class="fa fa-area-chart"></i>Count &nbsp;<progress value="50" max="100">50%</progress></h3><br><h3>  Fetch Customer Details   </h3></div>' },
+		],
+    }
+  })
+  
+</script>
+
+        
+    </body>
+</html>
